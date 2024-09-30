@@ -4,12 +4,66 @@ import Button from '../components/Button.astro';
 import Link from '../components/Link.astro';
 import { Image } from 'astro:assets';
 import thumbsup from "../assets/images/thumbsup.png";
+import Music from "../assets/images/music.jpg";
+import Music1 from "../assets/images/music1.jpg";
+import Music2 from "../assets/images/music3.jpg";
+import Music3 from "../assets/images/music4.jpg";
 ---
-<MainLayout title="Titel">
-	<article>
-		<h1>Index overskrift</h1>
-		<Button>Klik!</Button>
-		<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
-		<Image src={thumbsup} alt=""></Image>
-	</article>
+<MainLayout title="Brit Beat Music">
+	<article class="grid mx-auto container prose pt-6">
+		<div></div>
+		<h1 class="text-center">Historien bag Brit Beat Music</h1>
+		<Image src={Music} alt="Music studio"/>
+		<h2>Brit Beat Music's rødder</h2>
+		<h3>Rock and Roll</h3>
+		<p>British beat music, ofte omtalt som "Merseybeat" i sin tidlige fase, startede i Storbritannien i slutningen af 1950'erne og begyndelsen af 1960'erne. Det var en stil, der var dybt inspireret af amerikansk rock 'n' roll, rhythm and blues, og skiffle-musik, som blev bragt over Atlanterhavet via plader og radiosendinger. Her er en oversigt over, hvordan det udviklede sig:</p>
+		<h4>Amerikansk rock 'n' roll og rhythm and blues:</h4>
+
+		 <p>Artister som Chuck Berry, Little Richard, Buddy Holly, og Elvis Presley havde en massiv indflydelse på unge britiske musikere. Disse amerikanske kunstnere introducerede en energisk form for musik med stærke beats og elektriske guitarer.</p>
+         <h4>Skiffle:</h4>
+        <p>En anden vigtig inspirationskilde var den britiske skiffle-musik, som blev populær i midten af 1950'erne. Skiffle var en blanding af folk, jazz og blues, ofte spillet på hjemmelavede instrumenter. Skiffle-stjernen Lonnie Donegan inspirerede mange af de senere beatmusikere, herunder The Beatles.	
+			<Image src={Music2} alt="Jazz band med trompeter"/>
+		</p>
+		<h3>Merseybeat-scenen</h3>
+		<h4>Liverpool:</h4>
+	
+		<p> Selve "Merseybeat"-scenen opstod i Liverpool, en havneby med stærke kulturelle forbindelser til USA. Byens unge musikere havde let adgang til amerikanske plader og kulturer. Klubben The Cavern Club i Liverpool blev et vigtigt centrum for denne nye bølge af britisk musik.</p>
+		<h4>The Beatles:</h4>
+		<p> Den mest indflydelsesrige gruppe inden for Merseybeat og den britiske beatbølge generelt var The Beatles. Bandet, bestående af John Lennon, Paul McCartney, George Harrison og Ringo Starr, blev dannet i Liverpool i 1960. De begyndte at spille covers af amerikanske rock 'n' roll-sange, men udviklede snart deres egen lyd, der kombinerede elementer fra forskellige amerikanske genrer med en britisk sensibilitet.</p>
+			<Image src={Music1} alt="The Beatles"/>
+	
+	<h3>The British Invasion</h3>
+	<h4>1963-1964:</h4>
+	 <p>Da The Beatles fik et gennembrud i USA i 1964 med hits som "I Want to Hold Your Hand", begyndte den såkaldte "British Invasion" af det amerikanske musikmarked. Mange britiske beatbands blev enormt populære i USA, og beatmusik blev en global sensation.</p>
+	<h4>Rolling Stones og The Who:</h4>
+	 <p> Ud over Liverpool-baserede bands som The Beatles, blev andre britiske grupper, som The Rolling Stones og The Who, også en del af beatmusikken, dog med en råere og blues-inspireret stil, hvilket udvidede beat-musikkens omfang og popularitet.</p>
+	
+
+
+
+	<h2>Stilistiske karakteristika</h2>
+	<ul>
+		<li>
+			Beatmusik var kendetegnet ved en kombination af popmelodier, stærke rytmer, og guitardrevne arrangementer.</li>
+			<li> Den havde ofte en upbeat og dansevenlig stil med tydelige sangstrukturer, der trak på både amerikansk rock 'n' roll og rhythm and blues.</li>
+		</li>
+		<li>
+			Vokalharmonier var en vigtig del af beatmusikken, ofte inspireret af doo-wop og vokalgrupper fra USA.
+		</li>
+	</ul>
+	<h2>Beatmusikkens videre udvikling</h2>
+	<p>Mod midten af 1960'erne begyndte beatmusikken at udvikle sig. The Beatles og andre beatbands begyndte at eksperimentere med mere komplekse musikalske stilarter og psykedelia, hvilket markerede en overgang fra den enkle, guitarbaserede beatlyd til mere sofistikerede former for rock.</p>
+	
+<h2>British Beat Music i dag?</h2>
+<Image src={Music3} alt="Rock band på scenen"/>
+<p> Selvom genren som sådan ikke længere er aktiv på samme måde som i dens storhedstid med bands som The Beatles, The Rolling Stones, og andre fra den britiske invasion, lever elementer af beatmusikken videre i moderne musik. Her er en oversigt over, hvordan beatmusikken påvirker musik i dag:</p>
+<h3>Beatmusikkens arv i moderne britisk musik</h3>
+<h4>Indflydelse på britisk rock og pop:</h4>
+<p> Den britiske beatmusik dannede grundlaget for mange af de musikalske bevægelser, der fulgte efter. Genrer som britpop, indie rock, og punk rock trækker stadig på nogle af de stilistiske og kulturelle elementer fra beatmusikken. Bands som Oasis, Blur, Arctic Monkeys, og The Libertines har alle træk af den enkle, melodidrevne stil, der var kendetegnende for beatmusik</p>
+	
+<h4>The Beatles' og Stones' vedvarende indflydelse:</h4>
+<p>
+ The Beatles og The Rolling Stones er fortsat store kulturelle ikoner, og deres musik har en tidløs kvalitet, der stadig inspirerer nye generationer af musikere. Deres sange bliver regelmæssigt spillet, genudgivet og coveret af nye kunstnere, hvilket holder ånden i beatmusikken levende.
+</p>
+</article>
 </MainLayout>
