@@ -8,6 +8,31 @@ import Music from "../assets/images/music.jpg";
 import Music1 from "../assets/images/music1.jpg";
 import Music2 from "../assets/images/music3.jpg";
 import Music3 from "../assets/images/music4.jpg";
+const schemamarkup = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://scrolleybritbeat.netlify.app/"
+  },
+  "headline": "Historien bag Brit Beat Music",
+  "description": "Brit beat music - historien om hvordan det startede og hvordan det ser ud i dag.",
+  "image": "https://scrolleybritbeat.netlify.app/_astro/music.BSHo8UVX_27hm7X.webp",  
+  "author": {
+    "@type": "Person",
+    "name": "Vibe Mobeck"
+  },  
+  "publisher": {
+    "@type": "Organization",
+    "name": "",
+    "logo": {
+      "@type": "ImageObject",
+      "url": ""
+    }
+  },
+  "datePublished": "2024-09-30",
+  "dateModified": "2024-09-30"
+}
 ---
 <MainLayout title="Brit Beat Music">
 	<article class="grid mx-auto container prose pt-6">
@@ -67,3 +92,4 @@ import Music3 from "../assets/images/music4.jpg";
 </p>
 </article>
 </MainLayout>
+<script type="application/ld+json" set:html={JSON.stringify(schemamarkup)}/>
